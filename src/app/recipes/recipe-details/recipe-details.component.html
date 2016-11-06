@@ -1,0 +1,25 @@
+<p>Recipe Details</p>
+
+<div *ngIf="selectedRecipe">
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="{{selectedRecipe?.imagePath}}" style="width:100px" class="img-responsive">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{selectedRecipe?.name}}</h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <p>{{selectedRecipe?.description}}</p>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <button class="btn btn-success">To shopping card</button>
+      <button class="btn btn-primary">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>
