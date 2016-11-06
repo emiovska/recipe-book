@@ -16,8 +16,16 @@
         <p>{{selectedRecipe?.description}}</p>
       </div>
     </div>
+    <div>
+      <p>Ingredients</p>
+      <ul>
+        <li *ngFor="let ingredient of selectedRecipe.ingredients">
+          {{ingredient.name}} ({{ingredient.amount}})
+        </li>
+      </ul>
+    </div>
     <div class="col-xs-12">
-      <button class="btn btn-success">To shopping card</button>
+      <button class="btn btn-success" (click)="addToShoppingList()">To shopping card</button>
       <button class="btn btn-primary">Edit</button>
       <button class="btn btn-danger">Delete</button>
     </div>

@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="com-xs-10">
+    <rb-shopping-list-add></rb-shopping-list-add>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item" *ngFor="let item of items">{{item.name}} ({{item.amount}})</a>
+    </ul>
+  </div>
+</div>
